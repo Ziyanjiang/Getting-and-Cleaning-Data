@@ -43,3 +43,4 @@ datafinal0 <- group_by(newset, type, ID, activity)
 datafinal <- summarise_each(datafinal0, funs(mean))
 
 write.table(datafinal, "tidy_data.txt",  row.name=FALSE)
+datafinal
